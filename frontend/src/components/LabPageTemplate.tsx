@@ -75,7 +75,7 @@ export default function LabPageTemplate({ labId, labName }: Props) {
   const [deletingProduct, setDeletingProduct] = useState<Product | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   useEffect(() => {
     fetchItems();
